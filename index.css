@@ -1,0 +1,94 @@
+
+html, body {
+box-sizing: border-box;
+}
+
+* {
+box-sizing: inherit;
+margin: 0;
+padding: 0;
+font-family: 'Khula', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #001372;
+  color: white;
+  padding-left: 20px;
+}
+
+nav {
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+nav > ul > li {
+  list-style: none;
+  display: flex;
+  padding-left: 10px;
+}
+
+ul {
+  display: flex;
+  padding-left: 20px;
+}
+
+section {
+  width: 100%;
+  background-color: #c4c4c4;
+}
+
+.wrapper {
+  padding: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-flow: row wrap;
+  display: flex;
+}
+
+ .wrapper .box {
+  flex: auto;
+  width: 150px;
+  margin: 20px;
+}
+
+.wrapper .box img {
+  width: 100%;
+  height: auto;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+section > .wrapper > .box > .material-icons {
+  position: absolute;
+  color: white;
+  opacity: 0.8;
+  cursor: pointer;
+  font-size: 64px;
+}
+
+.material-icons:hover {
+  transform: scale(1.5);
+}
+
+
+@media screen and (max-width: 700px) {
+  nav {
+    display: none;
+  }
+  header {
+    justify-content: center;
+  }
+
+}
