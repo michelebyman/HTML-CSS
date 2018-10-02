@@ -46,7 +46,6 @@ section {
 .wrapper {
   padding: 20px;
   flex-wrap: wrap;
-  flex-direction: column;
   flex-flow: row wrap;
   display: flex;
 }
