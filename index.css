@@ -45,19 +45,20 @@ section {
 
 .wrapper {
   padding: 20px;
+  display:flex;
   flex-wrap: wrap;
   flex-flow: row wrap;
-  display: flex;
 }
 
- .wrapper .box {
+ .wrapper > .box {
   flex: auto;
   width: 150px;
   margin: 20px;
 }
 
-.wrapper .box img {
+.wrapper > .box > img {
   width: 100%;
+  min-width: 150px;
   height: auto;
 }
 
